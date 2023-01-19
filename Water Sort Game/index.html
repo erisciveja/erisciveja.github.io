@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Water Sort Game</title>
+  </head>
+  <body>
+    <div id="game"> 
+        <div id="menu"> 
+            <div id="menu-heading">Water Sort Game</div>
+            <div class="lvl" id="easy" onclick="OpenLevel(0);">Easy</div>
+            <div class="lvl" id="medium" onclick="OpenLevel(1);">Medium</div>
+            <div class="lvl" id="hard" onclick="OpenLevel(2);">Hard</div>
+            <div class="lvl" id="very-hard" onclick="OpenLevel(3);">Very Hard</div>
+            <div class="lvl" id="impossible" onclick="OpenLevel(7);">Impossible</div>
+            <br><br><br>
+            <div id="rules-btn" onclick="OpenRules();">Rules</div>
+        </div>
+        <div id="level"></div>
+        <div id="rules-page">
+          <div id="rules">
+            <div id="rules-heading">Rules</div>
+            <div id="rules-text">Explanation Of The Rules</div>
+            <div id="back" onclick="HideRules();">Back</div>
+          </div>
+        </div>
+     </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Comments --> 
+
+<!--The id attribute is used to give an unique id to an HTML element. 
+
+    A class name can be used by multiple HTML elements. 
+
+    While an id name must only be used by one HTML element within the page.
+
+    For example we used id only for specific terms, while class we used it many times
+
+    like in the class=lvl case. Classes can be easily manipulated, in CSS by typing
+
+    . the name of the class you can style that class. Onclick attribute
+
+    fires on a mouse click on the element and shows you what happens when you click.
+
+    The <button> tag defines a clickable button. Without JS is pretty useless.
+
+    You must add JS in order to make it interactive. -->
